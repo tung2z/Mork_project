@@ -150,14 +150,14 @@ ul ul a {
 }
 
 .loginForm{
-    background-image: url(/image/background.jpg);
+    background-image: url(./image/background.jpg);
     height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.btn{
+ .btn{
     color: #fff;
-    /* background-color: #0087e0; */
-}
+     /* background-color: #0087e0;  */
+} 
