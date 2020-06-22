@@ -1,4 +1,6 @@
 USE master
+CREATE DATABASE classMgt
+USE classMgt
 DROP DATABASE MorkProject
 CREATE DATABASE MorkProject
 USE MorkProject
