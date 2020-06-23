@@ -39,8 +39,8 @@
         <div class="col-2">
             <nav id="sidebar" class="border-right shadow-sm ">
                 <ul class="list-unstyled components bg-light ">
-                    <li class="active border-bottom">
-                        <a href="home.html">Home</a>
+                    <li class="border-bottom">
+                        <a href="/home.html">Home</a>
                     </li>
                     <li >
                         <a href="#class" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Classes</a>
@@ -56,10 +56,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#student" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Students</a>
                         <ul class="collapse list-unstyled border-bottom" id="student">
-                            <li>
+                            <li class="active">
                                 <a href="/student/showStudents.html">Show students</a>
                             </li>
                             <li>
@@ -93,21 +93,30 @@
             <div class=" order-lg-2">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a href="" data-target="#account" data-toggle="tab" class="nav-link active">Account</a>
+                        <a href="" data-target="#search" data-toggle="tab" class="nav-link active">Search</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" data-target="#name" data-toggle="tab" class="nav-link ">Name</a>
+                        <a href="" data-target="#name" data-toggle="tab" class="nav-link ">Leader Board</a>
                     </li>
                     <li class="nav-item">
                         <a href="" data-target="#classAccount" data-toggle="tab" class="nav-link">Class account</a>
                     </li>
                 </ul>
                 <div class="tab-content py-4">
-                    <div class="tab-pane active" id="account">
-                        <label for="colFormLabel" class="col-form-label mt-2"><h5>Search by student account</h5></label>
+                    <div class="tab-pane active" id="search">
+                        <label for="colFormLabel" class="col-form-label mt-2"><h5>Form search students</h5></label>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                            <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text btn-info" for="inputGroupSelect01">Search by</label>
+                                </div>
+                                <select class="custom-select " id="inputGroupSelect01">
+                                  <option value="account" selected>Account</option>
+                                  <option value="name">Name</option>
+                                  <option value="class-account">Class account</option>
+                                </select>
+                                <input class="form-control mr-sm-3" type="search" placeholder="Search">
+                              </div>
                         </form>
                         <table class="table table-striped my-4 shadow-sm">
                         <thead>

@@ -10,7 +10,8 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >   
-    <link rel="stylesheet" href="style.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" ></script>
@@ -20,12 +21,15 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-primary fixed-top shadow-sm ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">Navbar</a>
+            <a class="navbar-brand" href="/home.html">Navbar</a>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-align-justify"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">...</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Log out</a>
                     </li>
@@ -33,12 +37,12 @@
             </div>
         </div>
     </nav>
-    <div class="wrapper ">
+    <div class="wrapper">
         <!-- Sidebar  -->
         <div class="col-2">
             <nav id="sidebar" class="border-right shadow-sm ">
                 <ul class="list-unstyled components bg-light ">
-                    <li class=" border-bottom">
+                    <li class="border-bottom">
                         <a href="/home.html">Home</a>
                     </li>
                     <li >
@@ -55,7 +59,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li >
                         <a href="#student" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Students</a>
                         <ul class="collapse list-unstyled border-bottom" id="student">
                             <li>
@@ -69,7 +73,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#mentor" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Mentors</a>
                         <ul class="collapse list-unstyled border-bottom" id="mentor">
                             <li>
@@ -77,7 +81,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/profile.html" class="border-bottom">Own profile</a>
                     </li>
                     <li>
@@ -94,7 +98,7 @@
                     <div class="col-4 text-center">
                         <img src="/icon/account.svg" class="mx-auto img-fluid mb-3" alt="avatar" width="150px" height="150px">
                         
-                        <h6>Le Van Quy</h6>
+                        <h6>Lam Thi Huong</h6>
                         <div class="pt-2">
                             <a href="https://www.facebook.com/"><img src="/icon/facebook.svg" class="mx-1" width="25em" height="25em"></a>
                             <a href="https://www.instagram.com/"><img src="/icon/instagram-sketched.svg" class="mx-1" width="25em" height="25em"></a>
@@ -124,15 +128,15 @@
                                                 <tbody>
                                                     <tr>
                                                         <th>Name:</th>
-                                                        <td>Le Van Quy</td>
+                                                        <td>Lam Thi Huong</td>
                                                     </tr>
                                                     <tr>   
                                                         <th>Gender:</th>
-                                                        <td>Male</td>
+                                                        <td>Female</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Age:</th>
-                                                        <td>27</td>
+                                                        <td>?</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Email:</th>
@@ -140,7 +144,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Relationship:</th>
-                                                        <td></td>
+                                                        <td>?</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -196,8 +200,11 @@
                 </div>
             </div>
         </div>
+            <!-- <p class="mt-5 mb-3 text-muted text-center">&copy; 14.06.2020</p> -->
+        </div>
     </div>
 
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

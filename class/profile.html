@@ -94,20 +94,20 @@
         <div class="col-2">
             <nav id="sidebar" class="border-right shadow-sm ">
                 <ul class="list-unstyled components bg-light ">
-                    <li class="active border-bottom">
-                        <a href="home.html">Home</a>
+                    <li class="border-bottom">
+                        <a href="/home.html">Home</a>
                     </li>
-                    <li >
+                    <li class="active">
                         <a href="#class" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Classes</a>
                         <ul class="collapse list-unstyled border-bottom" id="class">
-                            <li>
+                            <li class="active">
                                 <a href="class/showClasses.html">Show classes</a>
                             </li>
                             <li>
                                 <a href="class/addClass.html">Add class</a>
                             </li>
                             <li>
-                                <a href="./class/editClass.html">Edit class</a>
+                                <a href="/class/editClass.html">Edit class</a>
                             </li>
                         </ul>
                     </li>
@@ -115,13 +115,13 @@
                         <a href="#student" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle border-bottom">Students</a>
                         <ul class="collapse list-unstyled border-bottom" id="student">
                             <li>
-                                <a href="./student/showStudents.html">Show students</a>
+                                <a href="/student/showStudents.html">Show students</a>
                             </li>
                             <li>
-                                <a href="./student/addStudent.html">Add student</a>
+                                <a href="/student/addStudent.html">Add student</a>
                             </li>
                             <li>
-                                <a href="./student/editStudent.html">Edit student</a>
+                                <a href="/student/editStudent.html">Edit student</a>
                             </li>
                         </ul>
                     </li>
@@ -296,7 +296,61 @@
                                 </div>
                                 <div class="tab-pane" id="checked">
                                     <div id="calendar">
-                                        cho bang diem danh vao day nhe mn
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend" id="button-addon3">
+                                              <button class="btn btn-info" type="button">From</button>
+                                              <input type="text" class="form-control" placeholder="xx/yy/zzzz">
+                                              <input type="text" class="form-control" placeholder="xx/yy/zzzz">
+                                              <button class="btn btn-info rounded" type="button">To</button>
+                                            </div>
+                                            
+                                        </div>
+                                        <table class="table text-center">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Account</th>
+                                                <th scope="col">Monday</th>
+                                                <th scope="col">Tuesday</th>
+                                                <th scope="col">Wednesday</th>
+                                                <th scope="col">Thursday</th>
+                                                <th scope="col">Friday</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">A1</th>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">A1</th>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">A1</th>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">A1</th>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                                <td><input type="checkbox"></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
                                     </div>
                                 </div>
                             </div>
